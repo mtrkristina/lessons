@@ -1,0 +1,128 @@
+@import url("reset.css");
+
+
+/* Селектори атрибутів */
+[class*="__container"] {
+	color: rgb(97, 154, 97);
+}
+
+
+/*===========================INDEX================================*/
+
+
+.list li {   
+   color: blue;
+}
+
+.main__container > p {
+   color: rgb(204, 158, 40);
+}
+
+.footer__container .links {
+   color: rgb(119, 16, 16);
+}
+
+/*========================FIRST=============================*/
+
+.first > div {
+   color: rgb(139, 37, 139);
+}
+.first h2{
+   color: rgb(53, 53, 140);
+}
+
+.text_first + p {
+   color: rgb(32, 78, 32);
+}
+.yellow_text ~ p{
+   color: rgb(179, 244, 49);
+}
+
+
+/*===============SECOND===================*/
+.header__container a {
+   color: rgb(193, 16, 193);
+}
+
+.text_second h3{
+   color:rgb(55, 194, 47) ;
+}
+
+.react li{   
+   color: rgb(13, 110, 110);
+}
+
+.angular *  {
+   color: rgb(141, 27, 27);
+}
+
+.vue h5 {
+   color: rgb(204, 52, 52);
+}
+.vue > p{
+   color: rgb(182, 135, 74);
+}
+
+.links span {
+   color: cornflowerblue;
+}
+
+/*===============THIRD===================*/
+.text_third {
+
+}
+
+.list {}
+
+.link_1 {
+   color: azure;
+}
+
+.link_2 {
+   color: brown;
+}
+
+.link_4 {
+   color: crimson;
+}
+
+.text_third {}
+
+.footer__container {}
+
+.links {}
+
+/*===============FOURTH===================*/
+.header__container {}
+
+.list {}
+
+.link_1 {}
+
+.link_2 {}
+
+.link_3 {}
+
+.text_fourth {}
+
+.footer__container {}
+
+.links {}
+/*===============FAQ===================*/
+.header__container {}
+
+.list {}
+
+.link_1 {}
+
+.link_2 {}
+
+.link_3 {}
+
+.link_4 {}
+
+.text_faq {}
+
+.footer__container {}
+
+.links {}
