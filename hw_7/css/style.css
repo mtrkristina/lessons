@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+.wrapper {
+   font-family: 'Poppins', sans-serif; /*font-family: 'Inter', sans-serif;*/
+   width: 100%;
+   height: 100%;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+	color: #6c757d;
+
+}
+[class*="__container"] {
+	max-width: 1270px; /* 1240 + 15 + 15 */
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header{
+   background: url(../img/header_image.png) center / cover no-repeat;
+   min-height: 600px;
+}
+
+.header__container {
+   padding: 330px 15px 100px;
+}
+.date, .sub-title {
+   font-family: 'Poppins';
+font-size: 12px;
+line-height: 1.66;
+color: #E5E5E5;
+}
+.date{
+   margin-bottom: 15px;
+}
+.title {
+      font-family: 'Poppins';
+font-weight: 700;
+font-size: 25px;
+line-height: 1.6;
+color: #F8F9FA;
+margin-bottom: 15px;
+}
+.sound-block {
+   min-height: 560px;
+   padding: 145px 0;
+   background: url(../img/stereo.png) 70% center no-repeat, url('../img/Vector\ 17.png') right no-repeat, url('../img/Vector\ 18.png') right no-repeat,#F4F7FF;
+}
+.sound-block__container {
+
+   font-family: 'Inter';
+}
+.sound-block-content{
+   max-width: 570px;
+}
+.price {
+   
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+color: #3056D3;
+margin-bottom: 13px;
+}
+.sound-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.25;
+color: #212B36;
+margin-bottom: 15px;
+}
+.text {
+   font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: #637381;
+margin-bottom: 35px;
+}
+.button {
+   width: 139px;
+   height: 44px;
+   padding: 10px 30px;
+   line-height: 1.5;
+   color: #fff;
+   background: #3056D3;
+   border-radius: 30px;
+   display: inline-block;
+}
+
+/*=========================================*/
+.list-block {
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(48,86,211,1) 100%);
+}
+.list__container {
+   padding: 150px 15px 50px;
+}
+.list-title {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 1;
+   color: #212B36;
+   margin-bottom: 45px;
+}
+.point-list, .blue-check-list, .green-check-list, .dismiss-list, .arrow-check-list, .star-check-list {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 0.9;
+   color: #637381;
+   margin-bottom: 60px;
+}
+
+.point-list li{
+   background: url(../img/icons/Ellipse.png) 0 center no-repeat;
+
+}
+
+.blue-check-list li{
+   background: url(../img/icons/checkmark-blue.png) 0 center no-repeat;
+
+}
+
+.green-check-list li{
+   background: url(../img/icons/checkmark-green.png) 0 center no-repeat;
+
+}
+.dismiss-list li {
+   background: url(../img/icons/Group.png) 0 center no-repeat;
+
+}
+.arrow-check-list li {
+   background: url(../img/icons/arrow-right.png) 0 center no-repeat;
+
+}
+.star-check-list li {
+   background: url(../img/icons/star.png) 0 center no-repeat;
+}
+.star-check-list{
+   margin-bottom: 0;
+}
+li{
+   padding: 5px 0;
+   padding-left: 30px;
+   margin-bottom: 18px;
+}
+li:not(:last-child) {
+   margin-bottom: 18px;
+}
