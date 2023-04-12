@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="main">
+         <div class="main__form form-section">
+            <div class="form-section__container">
+               <h2 class="form-section__title">Billing Details</h2>
+               <form method="GET" enctype="multipart/form-data" action="#" class="form-section__form">
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="firstname" placeholder="First name*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="lastname" placeholder="Last name*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="address" placeholder="Address*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="address" placeholder="Address line 2" type="text"
+                        class="form-section__input">
+                  </div>
+                  <div class="form-section__line">
+                     <select name="list" class="form-section__list">
+                        <option value="#">Country*</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">Poland</option>
+                        <option value="3">Moldova</option>
+                        <option value="4">Romania</option>
+                        <option value="5">Hungary</option>
+                        <option value="5">Slovakia</option>
+                     </select>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="city" placeholder="City/Town*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="zip" placeholder="Postcode / ZIP*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="phone" placeholder="Phone*" type="tel" class="form-section__input"
+                        required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="zip" placeholder="Postcode / ZIP*" type="text"
+                        class="form-section__input" required>
+                  </div>
+                  <div class="form-section__line">
+                     <input autocomplete="off" name="phone" placeholder="Phone*" type="tel" class="form-section__input"
+                        required>
+                  </div>
+
+                  <div class="form-section__textarea">
+                     <textarea autocomplete="off" name="phone" placeholder="Additional information"
+                        class="textarea"></textarea>
+                  </div>
+                  <div class="form-section__checkboxes chk">
+                     <div class="form-section__checkbox ">
+                        <input id="account" checked class="form-section__input chk__input" required name="account"
+                           type="checkbox">
+                        <label class="form-section__label" for="account">Create Account</label>
+                     </div>
+                     <div class="form-section__checkbox">
+                        <input id="dif-address" class="form-section__input chk__input" required name="dif-address"
+                           type="checkbox">
+                        <label class="form-section__label" for="dif-address">Ship to a different address?</label>
+                     </div>
+                  </div>
+                  <div class="form-section__coupon">
+                     <h3 class="form-section__coupon-title">Apply Coupon to get discount!</h3>
+                     <div class="form-section__coupon">
+                        <input autocomplete="off" name="city" placeholder="Coupon code" type="text"
+                           class="form-section__input form-section__coupon-input" required>
+                        <button type="submit" class="form-section__btn">Apply Code</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="main__shipping shipping">
+            <div class="shipping__container">
+               <h2 class="shipping__title">Shipping Address</h2>
+               <form class="shipping-address" action="#" method="post" enctype="multipart/form-data">
+                  <div class="shipping-address__line">
+                     <label for="email" class="shipping-address__label shipping-address__label-star">Email
+                        Address</label>
+                     <input id="email" class="shipping-address__input" required autocomplete="off" type="email"
+                        name="email" placeholder="roni_cost@example.com">
+                  </div>
+                  <div class="shipping-address__line">
+                     <label for="pas" class="shipping-address__label">Password</label>
+                     <input id="pas" class="shipping-address__input" autocomplete="off" type="password" name="password"
+                        placeholder="***************">
+                  </div>
+                  <div class="shipping-address__line">
+                     <label for="zip" class="shipping-address__label">Zip/Postal Code</label>
+                     <input id="zip" class="shipping-address__input" autocomplete="off" type="text" name="zip">
+                  </div>
+                  <p class="shipping-address__info">You already have an account with us. Sign in or continue as guest.
+                  </p>
+                  <div class="shipping-address__buttons">
+                     <button class="shipping-address__login" type="submit">login</button>
+                     <a class="shipping-address__link" href="#">Forgot Your Password?</a>
+                  </div>
+               </form>
+               <form class="shipping-form" action="#" method="post" enctype="multipart/form-data">
+                  <div class="shipping-form__line">
+                     <label for="first" class="shipping-form__label shipping-form__label-star">First Name</label>
+                     <input id="first" class="shipping-form__input" required autocomplete="off" type="text"
+                        name="firstname">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="last" class="shipping-form__label shipping-form__label-star">Last Name</label>
+                     <input id="last" class="shipping-form__input" required autocomplete="off" type="text"
+                        name="lastname">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="company" class="shipping-form__label">Company</label>
+                     <input id="company" class="shipping-form__input" autocomplete="off" type="text" name="company">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="street" class="shipping-form__label shipping-form__label-star">Street Address</label>
+                     <input id="street" class="shipping-form__input" required="" autocomplete="off" type="text"
+                        name="street">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="street-2" class="shipping-form__label shipping-form__label-opacity">Street
+                        Address</label>
+                     <input id="street-2" class="shipping-form__input" required="" autocomplete="off" type="text"
+                        name="street">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="street-3" class="shipping-form__label shipping-form__label-opacity">Street
+                        Address</label>
+                     <input id="street-3" class="shipping-form__input" required="" autocomplete="off" type="text"
+                        name="street">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="country" class="shipping-form__label shipping-form__label-star">Country</label>
+                     <input id="country" class="shipping-form__input" required="" autocomplete="off" type="text"
+                        name="country">
+                  </div>
+                  <div class="shipping-form__line">
+                     <label for="state" class="shipping-form__label shipping-form__label-star">State/Province</label>
+                     <select id="state" name="list" class="shipping-form__input">
+                        <option value="#">Please select a region, state or province</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">Poland</option>
+                        <option value="3">Moldova</option>
+                        <option value="4">Romania</option>
+                        <option value="5">Hungary</option>
+                        <option value="5">Slovakia</option>
+                     </select>
+                  </div>
+                  <div class="shipping-methods">
+                     <h2 class="shipping-methods__title">Shipping Methods</h2>
+                     <div class="shipping-methods__bottom">
+                        <div class="shipping-methods__radio-block radio-block">
+                           <div class="radio-block__box">
+                              <input id="radio-1" class="radio-block__input" type="radio" name="radio-1" checked="">
+                              <label for="radio-1" class="radio-block__label radio-block__label-black">$5.00</label>
+                           </div>
+                           <div class="radio-block__text">Fixed</div>
+                           <div class="radio-block__text">Flat Rate</div>
+                        </div>
+                        <div class="shipping-methods__radio-block radio-block">
+                           <div class="radio-block__box">
+                              <input id="radio-2" class="radio-block__input" type="radio" name="radio-1">
+                              <label for="radio-2" class="radio-block__label">$10.00</label>
+                           </div>
+                           <div class="radio-block__text">Table Rate</div>
+                           <div class="radio-block__text">Best Way</div>
+                        </div>
+                     </div>
+                     <div class="shipping-methods__navigation navigation">
+                        <button class="navigation__next" type="submit">next</button>
+                        <button class="navigation__back" type="reset">back</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
